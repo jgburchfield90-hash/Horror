@@ -1,0 +1,13 @@
+# Netlify _redirects — GrishamHorror.com short slugs
+# Copy this file to your project root when deploying to Netlify.
+# Format: /source  /destination  status-code
+
+/devil          /go.html?book=devil         302
+/choir          /go.html?book=choir         302
+/pale           /go.html?book=pale          302
+/cartography    /go.html?book=cartography   302
+/threshold2     /go.html?book=threshold2    302
+/lullaby        /go.html?book=lullaby       302
+
+# Add new lines here for future titles:
+# /newtitle     /go.html?book=newtitle      302

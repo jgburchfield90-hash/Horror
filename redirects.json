@@ -1,0 +1,14 @@
+{
+  "_comment": "GrishamHorror.com short URL → KDP destination mapping.",
+  "_usage":   "grishamhorror.com/<slug>  →  full Amazon/KDP URL",
+  "_update":  "Add a new entry for each published title. Use the book's Kindle ASIN page URL.",
+
+  "devil":        "https://www.amazon.com/dp/ASIN_DEVIL_HERE",
+  "choir":        "https://www.amazon.com/dp/ASIN_CHOIR_HERE",
+  "pale":         "https://www.amazon.com/dp/ASIN_PALE_HERE",
+  "cartography":  "https://www.amazon.com/dp/ASIN_CART_HERE",
+  "threshold2":   "https://www.amazon.com/dp/ASIN_T2_HERE",
+  "lullaby":      "https://www.amazon.com/dp/ASIN_LULL_HERE",
+
+  "_fallback":    "vault.html"
+}
