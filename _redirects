@@ -24,10 +24,10 @@
 /rec-woman            /go.html?book=rec-woman            302
 /rec-resurrectionist  /go.html?book=rec-resurrectionist  302
 /rec-cellar           /go.html?book=rec-cellar           302
-/nf-danse             /go.html?book=nf-danse             302
-/nf-paperbacks        /go.html?book=nf-paperbacks        302
-/nf-conspiracy        /go.html?book=nf-conspiracy        302
-/nf-shockvalue        /go.html?book=nf-shockvalue        302
+/nf-combating         /go.html?book=nf-combating         302
+/nf-freedomofmind     /go.html?book=nf-freedomofmind     302
+/nf-takeback          /go.html?book=nf-takeback          302
+/nf-thoughtreform     /go.html?book=nf-thoughtreform     302
 
 # Add new lines here for future titles:
 # /newtitle     /go.html?book=newtitle      302
