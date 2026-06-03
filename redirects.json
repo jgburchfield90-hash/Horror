@@ -12,12 +12,12 @@
 
   "_comment_rec":   "Recommended external authors — Amazon Associate links (tag: 220500b-20).",
   "_rec_format":    "Replace ASIN_*_HERE with the book's Kindle ASIN (found in the Amazon product URL: amazon.com/dp/<ASIN>).",
-  "rec-tremblay":   "https://www.amazon.com/dp/ASIN_TREMBLAY_HERE?tag=220500b-20",
-  "rec-nevill":     "https://www.amazon.com/dp/ASIN_NEVILL_HERE?tag=220500b-20",
-  "rec-ligotti":    "https://www.amazon.com/dp/ASIN_LIGOTTI_HERE?tag=220500b-20",
-  "rec-jones":      "https://www.amazon.com/dp/ASIN_JONES_HERE?tag=220500b-20",
-  "rec-barron":     "https://www.amazon.com/dp/ASIN_BARRON_HERE?tag=220500b-20",
-  "rec-ketchum":    "https://www.amazon.com/dp/ASIN_KETCHUM_HERE?tag=220500b-20",
+  "rec-tremblay":   "https://www.amazon.com/dp/B00MTSKHKO?tag=220500b-20",
+  "rec-nevill":     "https://www.amazon.com/dp/B005XMMO40?tag=220500b-20",
+  "rec-ligotti":    "https://www.amazon.com/dp/B00TY3ZOLE?tag=220500b-20",
+  "rec-jones":      "https://www.amazon.com/dp/B07THF63FL?tag=220500b-20",
+  "rec-barron":     "https://www.amazon.com/dp/B07H46219R?tag=220500b-20",
+  "rec-ketchum":    "https://www.amazon.com/dp/B001C2ZQDQ?tag=220500b-20",
 
   "_fallback":    "vault.html"
 }
