@@ -1138,6 +1138,62 @@
     </section>
     <!-- /nonfiction-section -->
 
+    <!-- ── Transmission Archive — Email Signup ─────────────── -->
+    <section aria-label="Newsletter signup" class="transmission-section" id="transmission-archive">
+
+      <div class="transmission-header">
+        <p class="vault-eyebrow">// Transmission Archive // Signal Distribution //</p>
+        <h2 class="transmission-title">Subscribe to <span>Receive Signals</span></h2>
+        <p class="transmission-subtitle">New release notifications. Nothing else. No noise.</p>
+      </div>
+
+      <div class="transmission-form-wrap">
+        <p class="transmission-lede">
+          When a new title enters the catalogue — new fiction, new non-fiction,
+          new field intelligence — a signal goes out to the Archive.
+          Leave your address. You will be the first to know.
+        </p>
+
+        <form class="transmission-form" id="transmission-form" novalidate>
+          <div class="transmission-field">
+            <label class="transmission-label" for="transmission-email">
+              // SIGNAL DESTINATION ADDRESS //
+            </label>
+            <div class="transmission-input-row">
+              <input
+                class="transmission-input"
+                type="email"
+                id="transmission-email"
+                name="email"
+                placeholder="your@address.com"
+                autocomplete="email"
+                required
+              />
+              <button class="transmission-submit" type="submit" id="transmission-btn">
+                TRANSMIT
+              </button>
+            </div>
+            <p class="transmission-error" id="transmission-error" aria-live="assertive" hidden></p>
+          </div>
+        </form>
+
+        <div class="transmission-success" id="transmission-success" hidden>
+          <p class="transmission-success-code">// SIGNAL RECEIVED //</p>
+          <p class="transmission-success-msg">
+            Your address has been logged in the Transmission Archive.
+            A confirmation has been dispatched.
+          </p>
+        </div>
+
+        <p class="transmission-disclaimer">
+          Mailing list only. No third-party sharing. No commerce.
+          Only release notifications. Unsubscribe by replying REMOVE.
+        </p>
+      </div>
+
+    </section>
+    <!-- /transmission-archive -->
+
     <!-- ── Footer ─────────────────────────────────────────── -->
     <footer class="vault-footer">
       <p>
@@ -1188,6 +1244,66 @@
           // window.location.href = 'index.html';
         }
       } catch (e) {}
+    })();
+  </script>
+
+  <script>
+    /* ============================================================
+       TRANSMISSION ARCHIVE — Email Signup Handler
+       POST → API Gateway → Lambda → DynamoDB + SES
+       Replace the placeholder URL after AWS deployment.
+       ============================================================ */
+    (function initTransmission() {
+      var API_ENDPOINT = 'REPLACE_WITH_API_GATEWAY_INVOKE_URL/subscribe';
+
+      var form    = document.getElementById('transmission-form');
+      var input   = document.getElementById('transmission-email');
+      var btn     = document.getElementById('transmission-btn');
+      var errEl   = document.getElementById('transmission-error');
+      var success = document.getElementById('transmission-success');
+
+      if (!form) return;
+
+      function showError(msg) { errEl.textContent = msg; errEl.hidden = false; }
+      function clearError()   { errEl.textContent = '';  errEl.hidden = true;  }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        clearError();
+
+        var email = input.value.trim();
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+          showError('// INVALID ADDRESS — Enter a valid email //');
+          input.focus();
+          return;
+        }
+
+        btn.disabled = true;
+        btn.textContent = 'TRANSMITTING…';
+
+        fetch(API_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email })
+        })
+        .then(function (res) {
+          return res.json().then(function (data) {
+            if (data.status === 'SUBSCRIBED') {
+              form.hidden = true;
+              success.hidden = false;
+            } else {
+              throw new Error(data.error || 'UNKNOWN');
+            }
+          });
+        })
+        .catch(function (err) {
+          btn.disabled = false;
+          btn.textContent = 'TRANSMIT';
+          showError(err.message === 'INVALID_EMAIL'
+            ? '// INVALID ADDRESS — Check your email and retry //'
+            : '// SERVICE DISRUPTION — Please try again //');
+        });
+      });
     })();
   </script>
 
