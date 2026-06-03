@@ -459,6 +459,74 @@ body::after {
   box-shadow: 0 0 14px rgba(139, 0, 0, 0.45);
 }
 
+/* =========================================================
+   RECOMMENDED SECTION — External authors / associate links
+   ========================================================= */
+
+.rec-section {
+  margin-top: 5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid #1a2a2a;
+}
+
+.rec-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.rec-title {
+  font-family: var(--font-mono);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  letter-spacing: 0.08em;
+  color: var(--bone);
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.rec-title span {
+  color: var(--clinical);
+}
+
+.rec-subtitle {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.6rem;
+  font-style: italic;
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+}
+
+/* External card — teal accent instead of blood-red */
+.book-card--external {
+  border-color: #1a2a2a;
+}
+
+.book-card--external:hover {
+  border-color: #1a3a3a;
+}
+
+.book-card--external .book-cover-strip {
+  background: #1a4040;
+}
+
+.book-card--external .book-series {
+  color: var(--clinical);
+}
+
+.book-card--external .book-cta {
+  background: #0d2a2a;
+  border-color: #1a4040;
+}
+
+.book-card--external .book-cta:hover {
+  background: #1a4040;
+  box-shadow: 0 0 14px rgba(168, 196, 184, 0.2);
+}
+
+.book-card--external .book-number {
+  color: #1a3a3a;
+}
+
 /* Footer */
 .vault-footer {
   text-align: center;

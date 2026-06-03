@@ -9,5 +9,13 @@
 /threshold2     /go.html?book=threshold2    302
 /lullaby        /go.html?book=lullaby       302
 
+# Recommended external authors (associate links):
+/rec-tremblay   /go.html?book=rec-tremblay   302
+/rec-nevill     /go.html?book=rec-nevill     302
+/rec-ligotti    /go.html?book=rec-ligotti    302
+/rec-jones      /go.html?book=rec-jones      302
+/rec-barron     /go.html?book=rec-barron     302
+/rec-ketchum    /go.html?book=rec-ketchum    302
+
 # Add new lines here for future titles:
 # /newtitle     /go.html?book=newtitle      302
