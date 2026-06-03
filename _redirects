@@ -21,7 +21,13 @@
 /rec-norff      /go.html?book=rec-norff      302
 /rec-hell       /go.html?book=rec-hell       302
 /rec-gnd        /go.html?book=rec-gnd        302
-/rec-woman      /go.html?book=rec-woman      302
+/rec-woman            /go.html?book=rec-woman            302
+/rec-resurrectionist  /go.html?book=rec-resurrectionist  302
+/rec-cellar           /go.html?book=rec-cellar           302
+/nf-danse             /go.html?book=nf-danse             302
+/nf-paperbacks        /go.html?book=nf-paperbacks        302
+/nf-conspiracy        /go.html?book=nf-conspiracy        302
+/nf-shockvalue        /go.html?book=nf-shockvalue        302
 
 # Add new lines here for future titles:
 # /newtitle     /go.html?book=newtitle      302

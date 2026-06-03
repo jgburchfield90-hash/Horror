@@ -23,7 +23,15 @@
   "rec-norff":      "https://www.amazon.com/dp/B0BDLKTCN3?tag=220500b-20",
   "rec-hell":       "https://www.amazon.com/dp/B0BZ3MNQQ2?tag=220500b-20",
   "rec-gnd":        "https://www.amazon.com/dp/B003IHC34I?tag=220500b-20",
-  "rec-woman":      "https://www.amazon.com/dp/B004MPRXKE?tag=220500b-20",
+  "rec-woman":          "https://www.amazon.com/dp/B004MPRXKE?tag=220500b-20",
+  "rec-resurrectionist":"https://www.amazon.com/dp/B00M6CNIRC?tag=220500b-20",
+  "rec-cellar":         "https://www.amazon.com/dp/B0028T82H4?tag=220500b-20",
+
+  "_comment_nf":    "Non-fiction titles — Field Intelligence section.",
+  "nf-danse":       "https://www.amazon.com/dp/B004INH9YK?tag=220500b-20",
+  "nf-paperbacks":  "https://www.amazon.com/dp/B01NBO5GIH?tag=220500b-20",
+  "nf-conspiracy":  "https://www.amazon.com/dp/B079WMRRYV?tag=220500b-20",
+  "nf-shockvalue":  "https://www.amazon.com/dp/B004IYJEN8?tag=220500b-20",
 
   "_fallback":    "vault.html"
 }
