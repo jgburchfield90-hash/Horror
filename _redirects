@@ -16,6 +16,12 @@
 /rec-jones      /go.html?book=rec-jones      302
 /rec-barron     /go.html?book=rec-barron     302
 /rec-ketchum    /go.html?book=rec-ketchum    302
+/rec-bighead    /go.html?book=rec-bighead    302
+/rec-header     /go.html?book=rec-header     302
+/rec-norff      /go.html?book=rec-norff      302
+/rec-hell       /go.html?book=rec-hell       302
+/rec-gnd        /go.html?book=rec-gnd        302
+/rec-woman      /go.html?book=rec-woman      302
 
 # Add new lines here for future titles:
 # /newtitle     /go.html?book=newtitle      302

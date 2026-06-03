@@ -18,6 +18,12 @@
   "rec-jones":      "https://www.amazon.com/dp/B07THF63FL?tag=220500b-20",
   "rec-barron":     "https://www.amazon.com/dp/B07H46219R?tag=220500b-20",
   "rec-ketchum":    "https://www.amazon.com/dp/B001C2ZQDQ?tag=220500b-20",
+  "rec-bighead":    "https://www.amazon.com/dp/B0B928CG5Q?tag=220500b-20",
+  "rec-header":     "https://www.amazon.com/dp/B09CNZKJDX?tag=220500b-20",
+  "rec-norff":      "https://www.amazon.com/dp/B0BDLKTCN3?tag=220500b-20",
+  "rec-hell":       "https://www.amazon.com/dp/B0BZ3MNQQ2?tag=220500b-20",
+  "rec-gnd":        "https://www.amazon.com/dp/B003IHC34I?tag=220500b-20",
+  "rec-woman":      "https://www.amazon.com/dp/B004MPRXKE?tag=220500b-20",
 
   "_fallback":    "vault.html"
 }
