@@ -3,12 +3,17 @@
   "_usage":   "grishamhorror.com/<slug>  →  full Amazon/KDP URL",
   "_update":  "Add a new entry for each published title. Use the book's Kindle ASIN page URL.",
 
-  "devil":        "https://www.amazon.com/dp/ASIN_DEVIL_HERE",
+  "devil":        "https://www.amazon.com/dp/B08X1F45DD?tag=220500b-20",
   "choir":        "https://www.amazon.com/dp/ASIN_CHOIR_HERE",
   "pale":         "https://www.amazon.com/dp/ASIN_PALE_HERE",
   "cartography":  "https://www.amazon.com/dp/ASIN_CART_HERE",
   "threshold2":   "https://www.amazon.com/dp/ASIN_T2_HERE",
   "lullaby":      "https://www.amazon.com/dp/ASIN_LULL_HERE",
+
+  "_comment_own":   "Jonathan Grisham's own published titles — KDP / Amazon (tag: 220500b-20).",
+  "mybaby":           "https://www.amazon.com/dp/B08X1GD18Z?tag=220500b-20",
+  "angels":           "https://www.amazon.com/dp/B08X186TY8?tag=220500b-20",
+  "warmforthemountain": "https://www.amazon.com/dp/B0GX7LYMM5?tag=220500b-20",
 
   "_comment_rec":   "Recommended external authors — Amazon Associate links (tag: 220500b-20).",
   "_rec_format":    "Replace ASIN_*_HERE with the book's Kindle ASIN (found in the Amazon product URL: amazon.com/dp/<ASIN>).",
@@ -28,6 +33,8 @@
   "rec-cellar":         "https://www.amazon.com/dp/B0028T82H4?tag=220500b-20",
 
   "_comment_nf":        "Non-fiction — Counter-Intelligence section (cult recovery / rebuttal).",
+  "nf-ifb":             "https://www.amazon.com/dp/B08ZWBN52P?tag=220500b-20",
+  "nf-ifb2":            "https://www.amazon.com/dp/B0CM5WT9BX?tag=220500b-20",
   "nf-combating":       "https://www.amazon.com/dp/B00V9DU340?tag=220500b-20",
   "nf-freedomofmind":   "https://www.amazon.com/dp/B09S6SR735?tag=220500b-20",
   "nf-takeback":        "https://www.amazon.com/dp/B0CN61N4F9?tag=220500b-20",

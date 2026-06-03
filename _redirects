@@ -2,7 +2,10 @@
 # Copy this file to your project root when deploying to Netlify.
 # Format: /source  /destination  status-code
 
-/devil          /go.html?book=devil         302
+/devil              /go.html?book=devil              302
+/mybaby             /go.html?book=mybaby             302
+/angels             /go.html?book=angels             302
+/warmforthemountain /go.html?book=warmforthemountain 302
 /choir          /go.html?book=choir         302
 /pale           /go.html?book=pale          302
 /cartography    /go.html?book=cartography   302
@@ -24,6 +27,8 @@
 /rec-woman            /go.html?book=rec-woman            302
 /rec-resurrectionist  /go.html?book=rec-resurrectionist  302
 /rec-cellar           /go.html?book=rec-cellar           302
+/nf-ifb               /go.html?book=nf-ifb               302
+/nf-ifb2              /go.html?book=nf-ifb2              302
 /nf-combating         /go.html?book=nf-combating         302
 /nf-freedomofmind     /go.html?book=nf-freedomofmind     302
 /nf-takeback          /go.html?book=nf-takeback          302
