@@ -459,6 +459,119 @@ body::after {
   box-shadow: 0 0 14px rgba(139, 0, 0, 0.45);
 }
 
+/* =========================================================
+   RECOMMENDED SECTION — External authors / associate links
+   ========================================================= */
+
+.rec-section {
+  margin-top: 5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid #1a2a2a;
+}
+
+.rec-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.rec-title {
+  font-family: var(--font-mono);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  letter-spacing: 0.08em;
+  color: var(--bone);
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.rec-title span {
+  color: var(--clinical);
+}
+
+.rec-subtitle {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.6rem;
+  font-style: italic;
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+}
+
+/* External card — teal accent instead of blood-red */
+.book-card--external {
+  border-color: #1a2a2a;
+}
+
+.book-card--external:hover {
+  border-color: #1a3a3a;
+}
+
+.book-card--external .book-cover-strip {
+  background: #1a4040;
+}
+
+.book-card--external .book-series {
+  color: var(--clinical);
+}
+
+.book-card--external .book-cta {
+  background: #0d2a2a;
+  border-color: #1a4040;
+}
+
+.book-card--external .book-cta:hover {
+  background: #1a4040;
+  box-shadow: 0 0 14px rgba(168, 196, 184, 0.2);
+}
+
+.book-card--external .book-number {
+  color: #1a3a3a;
+}
+
+/* Non-fiction card — gold/amber accent */
+.book-card--nonfiction {
+  border-color: #2a2010;
+}
+
+.book-card--nonfiction:hover {
+  border-color: #3a3010;
+}
+
+.book-card--nonfiction .book-cover-strip {
+  background: #3a2a00;
+}
+
+.book-card--nonfiction .book-series {
+  color: var(--exist);
+}
+
+.book-card--nonfiction .book-cta {
+  background: #1e1800;
+  border-color: #3a2a00;
+}
+
+.book-card--nonfiction .book-cta:hover {
+  background: #3a2a00;
+  box-shadow: 0 0 14px rgba(184, 154, 96, 0.2);
+}
+
+.book-card--nonfiction .book-number {
+  color: #3a2a10;
+}
+
+/* Preorder badge — shown on upcoming titles */
+.preorder-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--warning);
+  border: 1px solid var(--warning);
+  padding: 0.15rem 0.5rem;
+  margin-bottom: 0.75rem;
+  background: rgba(255, 60, 0, 0.05);
+}
+
 /* Footer */
 .vault-footer {
   text-align: center;
@@ -513,6 +626,129 @@ body::after {
 }
 
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* =========================================================
+   TRANSMISSION ARCHIVE — Email Signup Section
+   ========================================================= */
+
+.transmission-section { margin-top: 5rem; padding-top: 3.5rem; border-top: 1px solid #2a1010; }
+.transmission-header  { text-align: center; margin-bottom: 2.5rem; }
+
+.transmission-title {
+  font-family: var(--font-mono);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  letter-spacing: 0.08em;
+  color: var(--bone);
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+.transmission-title span { color: var(--blood); }
+
+.transmission-subtitle {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.6rem;
+  font-style: italic;
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+}
+
+.transmission-form-wrap {
+  max-width: 580px;
+  margin: 0 auto;
+  background: #161616;
+  border: 1px solid #2a1010;
+  padding: 2.2rem 2rem;
+}
+
+.transmission-lede {
+  font-size: 0.83rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.transmission-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  color: #3a3a3a;
+  text-transform: uppercase;
+  margin-bottom: 0.65rem;
+}
+
+.transmission-input-row { display: flex; }
+
+.transmission-input {
+  flex: 1;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--bone);
+  background: #0d0d0d;
+  border: 1px solid #2a1a1a;
+  border-right: none;
+  padding: 0.78rem 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  min-width: 0;
+}
+.transmission-input::placeholder { color: #2a2a2a; }
+.transmission-input:focus         { border-color: var(--blood); }
+
+.transmission-submit {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--bone);
+  background: var(--blood-dark);
+  border: 1px solid #3a0000;
+  padding: 0.78rem 1.4rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.transmission-submit:hover    { background: var(--blood); box-shadow: 0 0 14px rgba(139,0,0,0.4); }
+.transmission-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.transmission-error {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--warning);
+  margin-top: 0.6rem;
+}
+
+.transmission-success      { text-align: center; padding: 1.5rem 0; }
+.transmission-success-code {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  color: var(--clinical);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.transmission-success-msg  { font-size: 0.83rem; color: #666; line-height: 1.8; font-style: italic; }
+
+.transmission-disclaimer {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  color: #2a2a2a;
+  letter-spacing: 0.06em;
+  line-height: 1.8;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .transmission-input-row { flex-direction: column; }
+  .transmission-input     { border-right: 1px solid #2a1a1a; border-bottom: none; }
+  .transmission-submit    { width: 100%; }
+  .transmission-form-wrap { padding: 1.5rem 1rem; }
+}
 
 /* =========================================================
    RESPONSIVE
